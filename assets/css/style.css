@@ -185,7 +185,9 @@ a {
 
    }
    .agent-btn{
-	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content:center ;
    }
    .get-an-offer{
 	background-color: purple;
