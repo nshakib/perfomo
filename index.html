@@ -8,44 +8,52 @@
 
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 
     <!-- js -->
 </head>
 <body>
     <!-- navbar section -->
-    <section>
-        <div class="container">
-            <div class="row">
-                <!-- logo -->
-                <div class="col">
-                    <img src="assets/images/logo.png" alt="logo">
-                </div>
-                <!-- menubar -->
-                <div>
-                    <div>
-                        <ul>
-                            <li><a>Advitises</a></li>
-                            <li><a>Publishers</a></li>
-                            <li><a>About Us</a></li>
-                            <li><a>Contact</a></li>
-                            <li>
-                                <a>Register</a>
-                            </li>
-                            <li><a>Login</a></li>
-                            <li>
-                                <ul>
-                                    <li><a>English</a></li>
-                                    <li><a>Bangla</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Hero section & slider section-->
-    <section>
+    <div class="wrapper-main">
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">PERFOMO</div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+              <!-- USING CHECKBOX HACK -->
+              <!-- <input type="checkbox" id="checkbox_toggle" />
+              <label for="checkbox_toggle" class="hamburger">&#9776;</label> -->
+              <!-- NAVIGATION MENUS -->
+              <div class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li class="services">
+                  <a href="/">Services</a>
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  <!-- DROPDOWN MENU -->
+                  <ul class="dropdown">
+                    <li><a href="/">Dropdown 1 </a></li>
+                    <li><a href="/">Dropdown 2</a></li>
+                    <li><a href="/">Dropdown 2</a></li>
+                    <li><a href="/">Dropdown 3</a></li>
+                    <li><a href="/">Dropdown 4</a></li>
+                  </ul>
+                </li>
+                <li><a href="/">Pricing</a></li>
+                <li><a href="/">Contact</a></li>
+                <li><a class="btn" href="/">Register</a></li>
+                <li><a class="btn btn-login" href="/">Login</a></li>
+                <li class="languages"><a class="" href="/">English</a>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <ul class="dropdown">
+                        <li><a href="#">Bangla</a></li>
+                    </ul>
+                </li>
+              </div>
+            </ul>
+        </nav>
+        <!-- Hero section & slider section-->
+    <section id="slider">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -59,19 +67,22 @@
             </div>
         </div>
     </section>
+    </div>
+    
+    
     <!-- Hero 2 -->
-    <section>
+    <section id="register">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div>
-                        <a href="#">Register New Account</a>
+                    <div class="register-account">
+                        <a class="btn" href="#">Register New Account</a>
                         <p>Learn more about perfomo</p>
-                        <i class="fa fa-arrow-down"></i>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
                     </div>
                 </div>
                 <!-- text section -->
-                <div>
+                <div class="register-text">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam exercitationem repellat cupiditate, 
                        laborum ad adipisci quia eius voluptatibus voluptates nesciunt. Vero praesentium cumque vitae saepe 
                        quam velit aut alias consequuntur.</p>
@@ -83,12 +94,34 @@
         </div>
     </section>
     <!-- Service section-->
-    <section>
+    <section >
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div>
-                        <img src="" alt="">
+            <div class="row card">
+                <div class="col  flex-container">
+                    <div class="service-work">
+                        <img src="assets/images/services/watch.jpg" alt="watch">
+
+                        <h4>Security</h4>
+                        <ul>
+                            <li><a>Lorem ipsum dolor sit</a></li>
+                            <li><a>Lorem ipsum dolor sit</a></li>
+                            <li><a>Lorem ipsum dolor sit</a></li>
+                        </ul>
+                    </div>
+                    <div class="service-work">
+                        <img src="assets/images/services/watch.jpg" alt="watch">
+
+                        <h4>Security</h4>
+                        <ul>
+                            <li><a>Lorem ipsum dolor sit</a></li>
+                            <li><a>Lorem ipsum dolor sit</a></li>
+                            <li><a>Lorem ipsum dolor sit</a></li>
+                        </ul>
+                    </div>
+                    <div class="service-work">
+                        <img src="assets/images/services/watch.jpg" alt="watch">
+
+                        <h4>Security</h4>
                         <ul>
                             <li><a>Lorem ipsum dolor sit</a></li>
                             <li><a>Lorem ipsum dolor sit</a></li>
@@ -96,60 +129,61 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col">
-                    <div>
-                        <img src="" alt="">
-                        <ul>
-                            <li><a>Lorem ipsum dolor sit</a></li>
-                            <li><a>Lorem ipsum dolor sit</a></li>
-                            <li><a>Lorem ipsum dolor sit</a></li>
-                        </ul>
-                    </div>
+                <div class="find-out-more">
+                    <a>Find out more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                 </div>
-                <div class="col">
-                    <div>
-                        <img src="" alt="">
-                        <ul>
-                            <li><a>Lorem ipsum dolor sit</a></li>
-                            <li><a>Lorem ipsum dolor sit</a></li>
-                            <li><a>Lorem ipsum dolor sit</a></li>
-                        </ul>
-                    </div>
-                </div>
+                
+                
             </div>
         </div>
     </section>
     <!-- Agent section -->
-    <section>
+    <section id="agent-section">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <img src="" alt="">
-                    <h3>Advertiser</h3>
-                    <p></p>
-                    <small></small>
-                    <a href="#" class="" type="button">get an offer</a>
-                    <a href="#" class="" >Learn more</a>
+                <div class="col agent-service">
+                    <div class="agent">
+                        <img src="assets/images/agents/agent.jpg" alt="agent">
+                        <h3>Advertiser</h3>
+                        <p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit</p>
+                        <small>Lorem ipsum dolor sit Lorem ipsum dolor sit</small>
+                        
+                        <div class="agent-btn">
+                            <a href="#" class="btn get-an-offer" type="button">get an offer</a>
+                            <a href="#" class="btn learn-more" >Learn more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="agent">
+                        <img src="assets/images/agents/agent.jpg" alt="agent">
+                        <h3>Advertiser</h3>
+                        <p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit</p>
+                        <small>Lorem ipsum dolor sit Lorem ipsum dolor sit</small>
+                        <div class="agent-btn">
+                            <a href="#" class="btn get-an-offer" type="button">get an offer</a>
+                            <a href="#" class="btn learn-more" >Learn more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </section>
     <!-- News Letter section -->
-    <section>
-        <div class="container">
+    <section id="subcribes">
+        <div class="container newsletter">
             <div class="row">
                 <div class="col">
-                    <div>
-                        <h4>Subcribes to the news letter</h4>
+                    <div class="newsletter-article">
+                        <h2>Subcribes to the news letter</h2>
                         <p>Lorem ipsum dolor sit Lorem ipsum dolor sit</p>
                     </div>
                     <!-- form -->
-                    <div>
+                    <div class="newsletter-submit-form">
                         <form>
-                            <div>
+                            <div class="newsletter-form">
                                 <label for=""></label>
                                 <input type="text" name="" id="" value="" placeholder="Enter your email">
-                                <button type="submit" class="">Send</button>
+                                <button type="submit" class="btn">Send</button>
                             </div>
                         </form>
                     </div>
@@ -158,41 +192,29 @@
         </div>
     </section>
     <!-- footer section -->
-    <section>
+    <section class="footer-section">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <div>
-                        <ul>
-                            <li><a>Lorem ipsum dolor sit</a></li>
-                            <li><a>Lorem ipsum dolor sit</a></li>
-                            <li><a>Lorem ipsum dolor sit</a></li>
+                <div class="col-md-4">
+                    <div class="footer">
+                        <ul class="footer-item">
+                            <li><a href="#" class="footer-main-text">Advertiser</a></li>
+                            <li><a  href="#">Benifit</a></li>
+                            <li><a  href="#">Offers</a></li>
                         </ul>
-                    </div>
-                </div>
-                <div class="col">
-                    <div>
-                        <ul>
-                            <li><a>Lorem ipsum dolor sit</a></li>
-                            <li><a>Lorem ipsum dolor sit</a></li>
-                            <li><a>Lorem ipsum dolor sit</a></li>
+                        <ul class="footer-item">
+                            <li><a href="#" class="footer-main-text">Publishers</a></li>
+                            <li><a  href="#">Benifit</a></li>
+                            <li><a  href="#">Offers</a></li>
                         </ul>
-                    </div>
-                </div>
-                <div class="col">
-                    <div>
-                        <ul>
-                            <li><a>Lorem ipsum dolor sit</a></li>
-                            <li><a>Lorem ipsum dolor sit</a></li>
-                            <li><a>Lorem ipsum dolor sit</a></li>
+                        <ul class="footer-item">
+                            <li><a href="#" class="footer-main-text">Perfomo</a></li>
+                            <li><a  href="#">About Us</a></li>
+                            <li><a  href="#">FAQ</a></li>
                         </ul>
-                    </div>
-                </div>
-                <div class="col">
-                    <div>
-                        <ul>
-                            <li><a><i class="fa fa-facebook-circle"></i></a></li>
-                            <li><a><i class="fa fa-twitter-circle"></i></a></li>
+                        <ul class="footer-item social">
+                            <li><a  href="#"><i  class="fa-brands fa-facebook facebook fa-xl"></i></a></li>
+                            <li><a href="#" class="fa-brands fa-twitter twitter" title="" target="_blank" href="#"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -200,14 +222,16 @@
         </div>
     </section>
     <!-- Copyright section -->
-    <section>
+    <section id="copyright-section">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <p>perfomo &#169 2022</p>
-                </div>
-                <div class="col">
-                    <p>create by shakib</p>
+                <!-- <div class="col copyright">
+                    <p>perfomo <span>&#169 2022</span></p>
+                    <p class="developer">create by shakib</p>
+                </div> -->
+                <div class="Footer_outer">
+                    <div class="Footer_inner_left">perfomo <span>&#169 2022</span></div>
+                    <div class="Footer_inner_right">created by <span>shakib</span></div>
                 </div>
             </div>
         </div>
