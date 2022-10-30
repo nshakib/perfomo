@@ -1,0 +1,60 @@
+@media (max-width: 1024px) {
+
+    .header{
+        min-height: 70vh !important;
+    }
+    .hero{
+        transform: translate(8px, 166px) !important;
+    }
+    .register-main{
+        padding: 120px 0;
+    }
+    .register-text{
+        max-width: 75%;
+        margin: 0px 0px 0px 94px;
+        text-align: center;
+    }
+
+    .register-text small{
+       margin: 10px;
+    }
+
+    .service, .agent{
+        width: 25% !important;
+        transform: translate(-37px, 0);
+    }
+
+    .find-out-more{
+        width: 75% !important;
+        transform: translate(-37px, -4px);
+
+    }
+
+    .newsletter-form{
+        width: 80% !important;
+    }
+
+    .newsletter-article h2 {
+        font-size: 50px !important;
+    }
+
+    .submit{
+        padding: none!important;
+    }
+
+    .footer-nav{
+        display: flex !important;
+    }
+    .coloumn {
+        width: 10rem !important;
+        margin: 25px;
+    }
+
+    .social-item{
+        
+    }
+}
+
+@media (min-width: 1023px){
+
+}
